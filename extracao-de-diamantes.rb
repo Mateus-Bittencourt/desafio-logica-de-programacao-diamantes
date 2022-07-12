@@ -22,8 +22,8 @@ def extracao_de_diamantes(exp)
       indices << index
       indices << index + 1
     end
-    indices.reverse!.each do |char|
-      exp.delete_at(char)
+    indices.reverse!.each do |indice|
+      exp.delete_at(indice)
     end
     total_diamantes += soma_diamantes
     # puts total_diamantes
